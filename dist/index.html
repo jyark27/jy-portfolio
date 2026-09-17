@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Jiyon의 작업과 생각을 소개하는 포트폴리오" />
+    <title>Jiyon's Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <style>
+      :root { --ink:#0a1824; --paper:#f5f1e8; --lime:#c6ff3d; --blue:#62a6ff; }
+      * { box-sizing:border-box; }
+      body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; }
+      main { min-height:100vh; padding:24px clamp(22px,6vw,88px) 60px; overflow:hidden; }
+      nav { display:flex; align-items:center; justify-content:space-between; }
+      .brand { display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:-.045em; font-size:18px; }
+      .mark { display:grid; place-items:center; width:42px; height:42px; background:var(--ink); color:var(--lime); border-radius:13px 13px 13px 2px; font-size:18px; letter-spacing:-.12em; }
+      .status { font-size:14px; font-weight:700; display:flex; gap:8px; align-items:center; }
+      .dot { width:9px; height:9px; border-radius:50%; background:var(--lime); box-shadow:0 0 0 3px #dff9a4; }
+      .hero { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr); gap:clamp(36px,7vw,110px); align-items:end; padding:clamp(74px,14vw,160px) 0 82px; }
+      h1 { margin:0; font-size:clamp(54px,8.9vw,138px); letter-spacing:-.085em; line-height:.84; max-width:800px; }
+      h1 span { color:#2d69bd; }
+      .intro { max-width:350px; border-left:2px solid var(--ink); padding:0 0 4px 18px; font-size:17px; line-height:1.62; }
+      .intro b { display:block; margin-bottom:15px; font-size:12px; letter-spacing:.11em; text-transform:uppercase; }
+      .ticker { display:flex; align-items:center; gap:22px; border-top:1px solid #b9b1a5; border-bottom:1px solid #b9b1a5; padding:17px 0; white-space:nowrap; font-weight:800; font-size:14px; letter-spacing:.055em; text-transform:uppercase; overflow:hidden; }
+      .ticker i { width:9px; height:9px; flex:0 0 auto; border-radius:50%; background:#e56f4f; }
+      .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; padding-top:36px; }
+      .card { min-height:260px; border-radius:20px; padding:21px; display:flex; flex-direction:column; justify-content:space-between; }
+      .card:nth-child(1) { background:var(--ink); color:white; } .card:nth-child(2) { background:var(--lime); } .card:nth-child(3) { background:var(--blue); }
+      .card p { margin:0; font-size:12px; font-weight:800; letter-spacing:.09em; text-transform:uppercase; } .card h2 { margin:0; font-size:clamp(28px,3vw,47px); line-height:.91; letter-spacing:-.07em; }
+      footer { display:flex; justify-content:space-between; border-top:1px solid #b9b1a5; margin-top:14px; padding:22px 0; font-size:13px; font-weight:700; }
+      @media (max-width:700px) { main{padding:19px 21px 36px}.hero{grid-template-columns:1fr;padding:90px 0 60px}.intro{margin-top:12px}.grid{grid-template-columns:1fr}.card{min-height:180px} .status{font-size:12px} }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav aria-label="사이트 정보"><div class="brand"><span class="mark">JY</span><span>Jiyon's Portfolio</span></div><div class="status"><span class="dot"></span>Available for new work</div></nav>
+      <section class="hero"><h1>Ideas into<br /><span>impact.</span></h1><div class="intro"><b>Selected work · 2026</b>기억에 남는 디지털 경험을 설계하고 만듭니다. 전략, 디자인, 그리고 섬세한 디테일까지.</div></section>
+      <div class="ticker"><i></i><span>Portfolio</span><span>Creative direction</span><span>Digital experience</span><span>Seoul, Korea</span></div>
+      <section class="grid" aria-label="포트폴리오 분야"><article class="card"><p>01 / Visual</p><h2>Brand<br />systems</h2></article><article class="card"><p>02 / Product</p><h2>Digital<br />products</h2></article><article class="card"><p>03 / Story</p><h2>Experiences<br />that stay</h2></article></section>
+      <footer><span>© 2026 Jiyon</span><span>Let’s make something useful.</span></footer>
+    </main>
+  </body>
+</html>
